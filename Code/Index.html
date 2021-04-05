@@ -1,0 +1,166 @@
+<!doctype html>
+<!This is a comment>
+    <! Use shft + alt + f to align code>
+        <!check out:<li><a href=@https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox></a>>
+            <html lang="en">
+            <!indicates that hte language is English>
+
+                <head>
+                    <meta charset="utf-8">
+                    <! This is to indicate to use normal letters and symbols>
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" <!To make sure website
+                            scales to different size screens>
+                        <title> My Website</title>
+
+                        <!-- This is the link to your css document. It must be in the header -->
+                        <link rel="stylesheet" type="text/css" href="css/stylesheetExample.css">
+                </head>
+
+                <!-- Check CV for styling the <div style="width: 100%; display: inline-flex;"> each div in between this divs can also have percentage values assigned to it -->
+
+                <body>
+                    <h1>Welcome to my web page</h1>
+                    <hr>
+                    <!this draws a line straight through the page>
+                        <br>
+                        <!line break>
+                            <h1>This is a header h1<br /></h1>
+                            <h2>This is a header h2<br /></h2>
+                            <h3>This is a header h3<br /></h3>
+                            <h4>This is a header h4<br /></h4>
+
+                            <p>Hello and welcome to my first website on a live<br><br>
+                                <b>Example of links:</b><br>
+                                <!makes the text bold>
+
+                                    <!-- starts a bulleted listrepresented by the list tags: ol - ordered list ul -
+                                            unordered list -->
+                                    <!-- The id tag is css to style the specific resource, the a class is used to style multiple elements -->
+                                    <ul id="links">
+                                        <!-- This is a reference -->
+                                        <li><a href="http://www.facebook.com">Facebook</a></li>
+                                        <li><a href="http://www.google.com">Google</a></li>
+                                    </ul>
+
+                                    <p class="intro">This is the first paragraph of text. This is the first paragraph of
+                                        text. This is
+                                        the
+                                        first paragraph of text.
+                                        This is the first paragraph of text.</p>
+
+                                    <div class="box">
+                                        <p>
+                                            This is a box. <br />
+                                            OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+                                            OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+                                            OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+                                            OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+                                            OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+                                        </p>
+                                    </div>
+                                    <div class="box">
+                                        <p>
+                                            This is a box. <br />
+                                            OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+                                            OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+                                            OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+                                            OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+                                            OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+                                        </p>
+                                    </div>
+                                    <!-- You can make a signal word or phrase inside a paragraph a different colout using the span tag -->
+
+                                    <p class="intro"> This is the <span style="color:red">second paragraph</span> of
+                                        text. This is the
+                                        second paragraph of text. This
+                                        is
+                                        the
+                                        second paragraph of text.
+                                        This is the second paragraph of text.
+                                        <span style="color:blue">blue text</span>
+                                        <!Makes the text blue>
+                                    </p>
+
+                                    <!You should try and avoid using inline styling, a HTML document should be a
+                                        standalone doc>
+                                        <div style="background-color:rgb(216, 29, 29);color:rgb(0, 0, 0);padding:20px;">
+                                            <h2>London</h2>
+                                            <p>London is the capital city of England. It is the most populous city in
+                                                the
+                                                United
+                                                Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                                        </div>
+                                        <p>This is the third paragraph of text. This is the third paragraph of text.
+                                            This is
+                                            the
+                                            third paragraph of text. This is the third paragraph of text. This is the
+                                            third
+                                            paragraph of text.</p>
+                                        <p>
+                                            This paragraph
+                                            contains a lot of lines
+                                            in the source code,
+                                            but the browser
+                                            ignores it.
+                                        </p>
+
+                                        <p>
+                                            This paragraph
+                                            contains a lot of spaces
+                                            in the source code,
+                                            but the browser
+                                            ignores it.
+                                        </p>
+                                        <b>This links to a different page in the same folder</b><br>
+                                        <a href="CV.html">Link to CV</a><br>
+                                        <! this inks to a different page in the same folder>
+                                            <a href="http://codespace.co.za/">CodeSpace</a><br>
+                                            <!External reference>
+                                                <a href="#Links">This is a link to a place on the same web page</a><br>
+
+                                                <img src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/primary-logo-full-colour-a.svg"
+                                                    alt="CodeSpace Logo" width="500" height="300"> <br>
+                                                <!adds an image to the webpage>
+                                                    <img src="./images/daniel.jpg" alt="CodeSpace Logo" width="300"
+                                                        height="350">
+
+
+
+                                                    <form action="info.php" method="post">
+                                                        <label for="name">Name</label>
+                                                        <input type="text" id="name" name="user_name" required><br />
+                                                        <label for="mail">e-mail:</label>
+                                                        <!-- Check that it is in a valid email format -->
+                                                        <input type="email" id="mail" name="user_mail"><br />
+                                                        <label for="msg">Message:</label>
+                                                        <textarea id="msg" name="user_message"></textarea><br />
+                                                        <label for="password">Password:</label>
+                                                        <input type="password" id="password" name="password1"><br />
+                                                        <label for="checkbox">IsThisBoxChecked?</label>
+                                                        <input type="checkbox" checked><br />
+                                                        <label for="submitbutton">Submit</label>
+                                                        <input type="submit"><br />
+                                                        <div>
+                                                            <label for="sex">Sex:</label><br />
+                                                            <input type="radio" id="male" name="gender" value="male">
+                                                            <label for="male">Male</label><br>
+                                                            <input type="radio" id="female" name="gender"
+                                                                value="female">
+                                                            <label for="female">Female</label><br>
+                                                            <input type="radio" id="other" name="gender" value="other">
+                                                            <label for="other">Other</label><br />
+                                                        </div>
+                                                        <div>
+                                                            <select name="cars" id="cars">
+                                                                <option value="volvo">Volvo</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="opel">Opel</option>
+                                                                <option value="audi">Audi</option>
+                                                            </select>
+                                                        </div>
+                                                    </form>
+                                                    <div class="div"></div>
+                                                    
+                </body>
+
+            </html>
